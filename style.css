@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:400,600&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 50px 0 0;
+    line-height: 1.4;
+}
+
+img {
+    width: 100%;
+    box-shadow: 2px 2px 2px #8a7400;
+    border-radius: 10px;
+}
+
+section h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    
+
+}
+
+.btn {
+    background-color: #fade41;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px #8a7400;
+    color: black;
+    font-size: 16px;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    transition: all 0.21s ease;
+}
+
+.btn:active {
+    box-shadow: 0 0 0 #8a7400;
+    transform: translate(2px, 2px);
+}
+
+nav {
+    background-color: #fade41;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/* Nav & Header */
+.nav-link {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.header-left {
+    padding-left: 15px;
+    width: 60%;
+    
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+/* Features Section */
+a {
+    text-decoration: none;
+}
+
+.features {
+    border-radius: 10px;
+    margin: 0px 2%;
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    background: #fade41;
+}
+
+.features h2 {
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+.features p {
+    font-size: 15px;
+    line-height: 25px;
+}
+.icon {
+    width: 35px;
+    margin-top: 15px;
+}
+
+#video {
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #504407;
+}
+
+/* Join section */
+.bg-yellow {
+    background-color: #fade41;
+    margin-top: 28px;
+}
+
+/* Form section */
+form {
+    margin-bottom: 35px;
+}
+form .flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form input[type="email"] {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 2px 2px 2px #8a7400;
+    color: black;
+    padding: 5px 25px;
+    display: inline-block;
+    margin-right: 10px;
+    flex: 1;
+   
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: #fade41;
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .header-left, .header-right {
+        width: 100%;
+    }
+
+    .header-right {
+        order: 0;
+    }
+
+    .header-left {
+        order: 1;
+        padding-left: 20px;
+        text-align: center;
+        
+    }
+
+    .header-left h1 {
+        display: none;
+    }
+
+    .features {
+        margin: 10px 10px;
+        width: 100%;
+    }
+    .flex input {
+        margin: 5px 10px;
+        width: 100%;
+
+    }
+}
